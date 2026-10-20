@@ -1,0 +1,145 @@
+document.addEventListener("DOMContentLoaded", () => {
+
+  function start24hTimer(containerSelector, itemSelector, storageKey) {
+    const container = document.querySelector(containerSelector);
+    if (!container) return; // Якщо контейнер не знайдено, скрипт зупиняється
+
+    const values = container.querySelectorAll(itemSelector);
+    if (values.length < 3) return;
+
+    const TOTAL_TIME = 24 * 60 * 60 * 1000;
+
+    let startTime = localStorage.getItem(storageKey);
+
+    // Якщо немає старту — задаємо новий
+    if (!startTime) {
+      startTime = Date.now();
+      localStorage.setItem(storageKey, startTime);
+    } else {
+      startTime = parseInt(startTime, 10);
+    }
+
+    function updateTimer() {
+      const now = Date.now();
+      let elapsed = now - startTime;
+
+      // Ресет після 24 годин або якщо щось пішло не так
+      if (elapsed >= TOTAL_TIME || elapsed < 0) {
+        startTime = now;
+        localStorage.setItem(storageKey, startTime);
+        elapsed = 0;
+      }
+
+      const remaining = TOTAL_TIME - elapsed;
+
+      const hours = Math.floor(remaining / 3600000);
+      const minutes = Math.floor((remaining % 3600000) / 60000);
+      const seconds = Math.floor((remaining % 60000) / 1000);
+
+      values[0].textContent = String(hours).padStart(2, "0");
+      values[1].textContent = String(minutes).padStart(2, "0");
+      values[2].textContent = String(seconds).padStart(2, "0");
+    }
+
+    updateTimer();
+    setInterval(updateTimer, 1000);
+  }
+
+  // ВИПРАВЛЕНО: змінив ".footer-timer" на ".timer-display"
+  start24hTimer(".timer-display", ".timer-box", "footerTimerStartTime");
+
+});
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  function start48hTimer(containerSelector, itemSelector, storageKey) {
+    const container = document.querySelector(containerSelector);
+    if (!container) return; // Якщо контейнер не знайдено, скрипт зупиняється
+
+    const values = container.querySelectorAll(itemSelector);
+    if (values.length < 3) return;
+
+    // Змінено на 48 годин (як у тексті "Just 48 hours")
+    const TOTAL_TIME = 48 * 60 * 60 * 1000;
+
+    let startTime = localStorage.getItem(storageKey);
+
+    // Якщо немає старту — задаємо новий
+    if (!startTime) {
+      startTime = Date.now();
+      localStorage.setItem(storageKey, startTime);
+    } else {
+      startTime = parseInt(startTime, 10);
+    }
+
+    function updateTimer() {
+      const now = Date.now();
+      let elapsed = now - startTime;
+
+      // Скидання після 48 годин або якщо щось пішло не так
+      if (elapsed >= TOTAL_TIME || elapsed < 0) {
+        startTime = now;
+        localStorage.setItem(storageKey, startTime);
+        elapsed = 0;
+      }
+
+      const remaining = TOTAL_TIME - elapsed;
+
+      const hours = Math.floor(remaining / 3600000);
+      const minutes = Math.floor((remaining % 3600000) / 60000);
+      const seconds = Math.floor((remaining % 60000) / 1000);
+
+      values[0].textContent = String(hours).padStart(2, "0");
+      values[1].textContent = String(minutes).padStart(2, "0");
+      values[2].textContent = String(seconds).padStart(2, "0");
+    }
+
+    updateTimer();
+    setInterval(updateTimer, 1000);
+  }
+
+  // Запуск таймера для нового блоку
+  start48hTimer(".v-timer-display", ".v-timer-val", "vTimer48hStart");
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Відлік хвилин:секунд для банера "Offer ends in" (s10), по колу кожні 30 хв
+  function startMinutesTimer(containerSelector, storageKey, minutesTotal) {
+    const container = document.querySelector(containerSelector);
+    if (!container) return;
+
+    const minEl = container.querySelector("[data-min]");
+    const secEl = container.querySelector("[data-sec]");
+    if (!minEl || !secEl) return;
+
+    const TOTAL_TIME = minutesTotal * 60 * 1000;
+
+    let startTime = parseInt(localStorage.getItem(storageKey), 10);
+    if (!startTime) {
+      startTime = Date.now();
+      localStorage.setItem(storageKey, startTime);
+    }
+
+    function updateTimer() {
+      const now = Date.now();
+      let elapsed = now - startTime;
+
+      if (elapsed >= TOTAL_TIME || elapsed < 0) {
+        startTime = now;
+        localStorage.setItem(storageKey, startTime);
+        elapsed = 0;
+      }
+
+      const remaining = TOTAL_TIME - elapsed;
+      minEl.textContent = String(Math.floor(remaining / 60000)).padStart(2, "0");
+      secEl.textContent = String(Math.floor((remaining % 60000) / 1000)).padStart(2, "0");
+    }
+
+    updateTimer();
+    setInterval(updateTimer, 1000);
+  }
+
+  startMinutesTimer(".s10-countdown", "s10TimerStart", 30);
+});
