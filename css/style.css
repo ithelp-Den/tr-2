@@ -123,41 +123,43 @@ button {
    m 600, b 700, x 800, i italic */
 .h24 { font: 400 2.4rem/1.2 'Anton', sans-serif; }
 .h28 { font: 400 2.8rem/1.2 'Anton', sans-serif; }
-.h29_2 { font: 400 2.92rem/1.2 'Anton', sans-serif; }
 .h30 { font: 400 3rem/1.2 'Anton', sans-serif; }
 .h32 { font: 400 3.2rem/1.2 'Anton', sans-serif; }
 .h40 { font: 400 4rem/1.2 'Anton', sans-serif; }
+.h43_7 { font: 400 4.37rem/1.2 'Anton', sans-serif; }
 .h48_3 { font: 400 4.83rem/1.2 'Anton', sans-serif; }
 .h50 { font: 400 5rem/1.2 'Anton', sans-serif; }
 .h53_3 { font: 400 5.33rem/1.2 'Anton', sans-serif; }
-.h56_8 { font: 400 5.68rem/1.2 'Anton', sans-serif; }
 .h58_3 { font: 400 5.83rem/1.2 'Anton', sans-serif; }
 .h62_2 { font: 400 6.22rem/1.2 'Anton', sans-serif; }
 .p14 { font: 400 1.4rem/1.2 'Source Sans 3', sans-serif; }
 .p14b { font: 700 1.4rem/1.2 'Source Sans 3', sans-serif; }
 .p14m { font: 600 1.4rem/1.2 'Source Sans 3', sans-serif; }
-.p15m { font: 600 1.5rem/1.2 'Source Sans 3', sans-serif; }
 .p16 { font: 400 1.6rem/1.2 'Source Sans 3', sans-serif; }
 .p16b { font: 700 1.6rem/1.2 'Source Sans 3', sans-serif; }
 .p16m { font: 600 1.6rem/1.2 'Source Sans 3', sans-serif; }
 .p18 { font: 400 1.8rem/1.2 'Source Sans 3', sans-serif; }
 .p18b { font: 700 1.8rem/1.2 'Source Sans 3', sans-serif; }
+.p18x { font: 800 1.8rem/1.2 'Source Sans 3', sans-serif; }
 .p20 { font: 400 2rem/1.2 'Source Sans 3', sans-serif; }
 .p20b { font: 700 2rem/1.2 'Source Sans 3', sans-serif; }
+.p21x { font: 800 2.1rem/1.2 'Source Sans 3', sans-serif; }
+.p23b { font: 700 2.3rem/1.2 'Source Sans 3', sans-serif; }
 .p24b { font: 700 2.4rem/1.2 'Source Sans 3', sans-serif; }
 .p25b { font: 700 2.5rem/1.2 'Source Sans 3', sans-serif; }
+.p31b { font: 700 3.1rem/1.2 'Source Sans 3', sans-serif; }
 .p32x { font: 800 3.2rem/1.2 'Source Sans 3', sans-serif; }
 .p35x { font: 800 3.5rem/1.2 'Source Sans 3', sans-serif; }
 .r16 { font: 400 1.6rem/1.2 'Roboto', sans-serif; }
-.r17b { font: 700 1.7rem/1.2 'Roboto', sans-serif; }
-
-.p19b { font: 700 1.9rem/1.2 'Source Sans 3', sans-serif; }
+.h56_8 { font: 400 5.68rem/1.2 'Anton', sans-serif; }
+.h29_2 { font: 400 2.92rem/1.2 'Anton', sans-serif; }
+.p15m { font: 600 1.5rem/1.2 'Source Sans 3', sans-serif; }
 
 /* ---------- Hero: 3D-карусель програм ---------- */
 .hero-carousel-wrap {
   position: absolute;
   left: 0;
-  top: 24.9rem;
+  top: 21.9rem;
   width: 100%;
   height: 18.29rem;
   perspective: 80rem;

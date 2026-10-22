@@ -1,0 +1,46 @@
+/* =========================================================
+   A/B-варіанти першого екрана (index-v1/v2/v3.html)
+   Блоки згенеровані з макета Figma: координати в rem (1rem = 10px макета)
+   ========================================================= */
+
+/* блок/картка з макета */
+.hv .fb {
+  position: absolute;
+  pointer-events: none;
+}
+
+/* градієнтна обводка всередині блоку (stroke INSIDE) */
+.hv .fstroke {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0);
+}
+
+/* текст з макета */
+.hv .ft {
+  position: absolute;
+  margin: 0;
+  white-space: pre;
+  pointer-events: none;
+}
+
+.hv .fg-text {
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* іконки / вектори */
+.hv .fg {
+  position: absolute;
+  overflow: visible;
+  pointer-events: none;
+}
+
+/* v2: рожеве світіння навколо каруселі */
+.hv-glow {
+  filter: drop-shadow(0 0 2.15rem rgba(255, 71, 91, 0.5));
+}

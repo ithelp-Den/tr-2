@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+(function(w,d,s,u){
+  if(w.oaiq)return;
+  var q=function(){q.q.push(arguments)};
+  q.q=[];w.oaiq=q;
+  var j=d.createElement(s);j.async=true;j.src=u;
+  var f=d.getElementsByTagName(s)[0];
+  f.parentNode.insertBefore(j,f);
+})(window,document,"script","https://bzrcdn.openai.com/sdk/oaiq.min.js");
+
+oaiq("init",{
+  pixelId:"42XmqxGShS225wFHN4C3fJ",
+  debug:true
+});
+
+oaiq("measure","page_viewed",{
+  type:"contents"
+});
+
+// Передача рекламной метки на сайт оплаты.
+(function(){
+  var ref=new URLSearchParams(location.search).get("oppref");
+  if(!ref)return;
+
+  document.addEventListener("click",function(e){
+    if(!e.target || !e.target.closest)return;
+
+    var el=e.target.closest("[data-href],a[href]");
+    if(!el)return;
+
+    var attr=el.hasAttribute("data-href")?"data-href":"href";
+
+    try{
+      var url=new URL(el.getAttribute(attr),location.href);
+      if(url.origin!=="https://mmoschool.online")return;
+
+      url.searchParams.set("oppref",ref);
+      el.setAttribute(attr,url.href);
+    }catch(err){}
+  },true);
+})();
+</script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <link rel="icon" type="image/png" href="./img/favicon.png">
+  <title>ONE MEMBERSHIP</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Creepster&family=Roboto:wght@400;700;800&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/style.css?v=1">
+  <link rel="stylesheet" href="./css/hero-variants.css?v=1">
+
+<script>
+(function () {
+    function updateTomorrowDate() {
+        var el = document.getElementById('tomorrow');
+        if (!el) return;
+        var tomorrow = new Date();
+        tomorrow.setDate(tomorrow.getDate() + 1);
+        var day = tomorrow.getDate();
+        var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+        el.textContent = months[tomorrow.getMonth()] + ' ' + day;
+    }
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', updateTomorrowDate);
+    } else {
+        updateTomorrowDate();
+    }
+})();
+</script>
+
+<script>!function(w,d,s,u){if(w.oaiq)return;var q=function(){q.q.push(arguments)};q.q=[];w.oaiq=q;var j=d.createElement(s);j.async=1;j.src=u;var f=d.getElementsByTagName(s)[0];f.parentNode.insertBefore(j,f)}(window,document,"script","https://bzrcdn.openai.com/sdk/oaiq.min.js");oaiq("init",{pixelId:"Pgm1kNokjknHguHtdu3Xgm",debug:true});</script>
+
+<script src="/_t/l.js" defer data-cfasync="false"></script>
+</head>
+<body>
+<div class="page">
+
+<section class="sec sec-hero hv hv-v3" style="height:78rem">
+<img class="art" src="img/hero-bg.webp" width="428" height="780" alt="" fetchpriority="high">
+<div class="hero-carousel-wrap" style="top:18.4rem">
+    <div class="hero-carousel">
+      <div class="hero-card" style="--i:0;background-image:url('img/cards/card1.webp')"></div>
+      <div class="hero-card" style="--i:1;background-image:url('img/cards/card2.webp')"></div>
+      <div class="hero-card" style="--i:2;background-image:url('img/cards/card3.webp')"></div>
+      <div class="hero-card" style="--i:3;background-image:url('img/cards/card4.webp')"></div>
+      <div class="hero-card" style="--i:4;background-image:url('img/cards/card5.webp')"></div>
+      <div class="hero-card" style="--i:5;background-image:url('img/cards/card6.webp')"></div>
+      <div class="hero-card" style="--i:6;background-image:url('img/cards/card7.webp')"></div>
+      <div class="hero-card" style="--i:7;background-image:url('img/cards/card8.webp')"></div>
+      <div class="hero-card" style="--i:8;background-image:url('img/cards/card9.webp')"></div>
+      <div class="hero-card" style="--i:9;background-image:url('img/cards/card10.webp')"></div>
+      <div class="hero-card" style="--i:10;background-image:url('img/cards/card11.webp')"></div>
+      <div class="hero-card" style="--i:11;background-image:url('img/cards/card12.webp')"></div>
+      <div class="hero-card" style="--i:12;background-image:url('img/cards/card13.webp')"></div>
+      <div class="hero-card" style="--i:13;background-image:url('img/cards/card14.webp')"></div>
+      <div class="hero-card" style="--i:14;background-image:url('img/cards/card15.webp')"></div>
+      <div class="hero-card" style="--i:15;background-image:url('img/cards/card16.webp')"></div>
+    </div>
+  </div>
+<img class="hero-glow" src="img/hero-glow.webp" alt="" style="top:16.5rem;height:22rem">
+<img class="art" src="img/hero-v3-photo.webp" width="428" height="780" alt="Karyna Zubalenok" fetchpriority="high">
+<div class="fb" style="left:2.75rem;top:47.4rem;width:37.3rem;height:6.6rem;background:radial-gradient(18.65rem 6.328rem at 18.65rem 3.3rem, rgba(0,0,0,0.21) 31.07%, rgba(251,94,112,0.21) 100.00%);border-radius:2rem;-webkit-backdrop-filter:blur(9.13rem);backdrop-filter:blur(9.13rem)"></div>
+<div class="fb" style="left:3.55rem;top:48.8rem;width:2.98rem;height:2.98rem;background:linear-gradient(180.00deg, #9E2543 0.00%, #5C1123 100.00%);border-radius:95.862rem"></div>
+<svg class="fg" style="left:4.252rem;top:49.484rem;width:1.575rem;height:1.612rem" viewBox="0 0 15.752 16.123" aria-hidden="true"><path fill-rule="nonzero" d="M14.9004 10.8976C15.1718 10.7412 15.5191 10.8334 15.6758 11.1046C15.8324 11.3759 15.7389 11.7231 15.4678 11.88L8.33013 16.0011C8.04925 16.1633 7.70286 16.1631 7.42192 16.0011L0.283252 11.88C0.0120913 11.7231 -0.0804439 11.376 0.0762205 11.1046C0.233158 10.8336 0.580345 10.741 0.851611 10.8976L7.87505 14.9523L14.9004 10.8976ZM14.9004 7.5714C15.1718 7.41509 15.5191 7.50725 15.6758 7.77843C15.8325 8.04972 15.7388 8.3969 15.4678 8.55382L8.33013 12.6749C8.04922 12.8371 7.70288 12.837 7.42192 12.6749L0.283252 8.55382C0.0120913 8.39695 -0.0804439 8.04978 0.0762205 7.77843C0.233205 7.5076 0.580403 7.41482 0.851611 7.5714L7.87505 11.6261L14.9004 7.5714ZM7.52935 0.0684701C7.75084 -0.0228036 8.00025 -0.0228431 8.22173 0.0684701L8.33013 0.121204L14.9571 3.94738C15.5621 4.29694 15.5619 5.17088 14.9571 5.52062L8.33013 9.34679C8.04927 9.50894 7.70285 9.50877 7.42192 9.34679L0.794971 5.52062C0.189494 5.17105 0.189494 4.29695 0.794971 3.94738L7.42192 0.121204L7.52935 0.0684701ZM1.7022 4.73351L7.87505 8.29699L14.0479 4.73351L7.87505 1.17003L1.7022 4.73351Z" fill="#FFFFFF"/></svg>
+<p class="ft" style="left:6.93rem;top:48.8rem;width:7rem;height:1.9rem;font:600 2rem/1.9rem 'Source Sans 3', sans-serif;text-align:left;letter-spacing:0.02rem;color:#FFFFFF">16+</p>
+<p class="ft" style="left:6.93rem;top:51.3rem;width:7rem;height:1.3rem;font:600 1.4rem/1.33rem 'Source Sans 3', sans-serif;text-align:center;letter-spacing:0.014rem;color:#FFFFFF">PROGRAMS</p>
+<div class="fb" style="left:16.21rem;top:48.8rem;width:2.98rem;height:2.98rem;background:linear-gradient(180.00deg, #9E2543 0.00%, #5C1123 100.00%);border-radius:95.862rem"></div>
+<svg class="fg" style="left:16.974rem;top:49.557rem;width:1.452rem;height:1.465rem" viewBox="0 0 14.516 14.653" aria-hidden="true"><path fill-rule="nonzero" d="M6.8289 0.257749C6.95224 -0.0694796 7.4741 -0.0694587 7.59746 0.257749C8.10889 1.61779 9.1051 3.88082 10.4295 5.04388C11.4311 5.9234 13.1089 6.6034 14.243 6.99408C14.5791 7.10988 14.5881 7.6482 14.2557 7.77435L13.9305 7.90228C12.5599 8.44615 10.5925 9.37774 9.53496 10.582C8.65551 11.5836 7.9754 13.2615 7.58476 14.3954C7.47607 14.7103 6.9964 14.7382 6.83281 14.4667L6.80449 14.4081C6.2861 13.042 5.30038 10.8321 3.99687 9.68744C3.13881 8.93398 1.7845 8.3269 0.700974 7.92279L0.255662 7.76263C-0.08526 7.64376 -0.0851813 7.08765 0.255662 6.96869C1.31681 6.59906 2.81447 5.98741 3.80547 5.20306L3.99687 5.04388C5.32123 3.88086 6.31745 1.61781 6.8289 0.257749ZM7.21269 2.36126C7.07003 2.66405 6.91759 2.97621 6.7498 3.28509C6.24535 4.2137 5.58694 5.21127 4.77226 5.92669C4.11583 6.50309 3.24995 6.9825 2.41777 7.36517C3.25016 7.74791 4.1157 8.22903 4.77226 8.8056C5.57442 9.51017 6.22492 10.487 6.72539 11.4013C6.88342 11.69 7.02777 11.9819 7.16387 12.2665C7.55443 11.4012 8.05278 10.4903 8.65312 9.80658C9.35764 9.00451 10.3346 8.3539 11.2488 7.85345C11.5376 7.69538 11.8294 7.55012 12.1141 7.414C11.2487 7.02343 10.3377 6.527 9.6541 5.92669C8.8394 5.21123 8.18101 4.21373 7.67656 3.28509C7.50868 2.97603 7.35542 2.66421 7.21269 2.36126ZM12.6248 0.228452C12.7971 -0.076169 13.3744 -0.0761323 13.5467 0.228452C13.6766 0.458143 13.8309 0.677382 14.0047 0.830014C14.0841 0.899687 14.1794 0.964973 14.2811 1.02533C14.5861 1.20724 14.5976 1.80858 14.2918 1.98919L14.1385 2.08392C13.9897 2.18293 13.8543 2.29311 13.7498 2.41205L13.6482 2.54193C13.6156 2.58814 13.5837 2.63755 13.5535 2.68841L13.5154 2.74212C13.3138 2.97712 12.8312 2.98547 12.6297 2.75287L12.5906 2.69916C12.4989 2.54349 12.3956 2.39468 12.283 2.27142L12.1668 2.15716C12.1358 2.12993 12.1023 2.10295 12.0672 2.07708L11.9568 2.00091C11.6524 1.80671 11.6522 1.17933 11.9568 0.985288C11.995 0.96094 12.0322 0.93587 12.0672 0.910093L12.1668 0.830014C12.3406 0.677349 12.4949 0.458203 12.6248 0.228452Z" fill="#FFFFFF"/></svg>
+<p class="ft" style="left:19.59rem;top:48.8rem;width:5.7rem;height:1.9rem;font:600 2rem/1.9rem 'Source Sans 3', sans-serif;text-align:left;letter-spacing:0.02rem;color:#FFFFFF">300+</p>
+<p class="ft" style="left:19.59rem;top:51.3rem;width:5.7rem;height:1.3rem;font:600 1.4rem/1.33rem 'Source Sans 3', sans-serif;text-align:center;letter-spacing:0.014rem;color:#FFFFFF">LESSONS</p>
+<div class="fb" style="left:27.57rem;top:48.8rem;width:2.98rem;height:2.98rem;background:linear-gradient(180.00deg, #9E2543 0.00%, #5C1123 100.00%);border-radius:95.862rem"></div>
+<svg class="fg" style="left:28.197rem;top:49.562rem;width:1.726rem;height:1.455rem" viewBox="0 0 17.26 14.548" aria-hidden="true"><path fill-rule="nonzero" d="M8.60225 7.27426C11.5239 7.2743 13.8923 9.64278 13.8924 12.5644L13.8924 13.8869C13.8924 14.2521 13.5963 14.5481 13.2311 14.5482C12.866 14.5481 12.5698 14.2521 12.5698 13.8869L12.5698 12.5644C12.5697 10.3732 10.7934 8.59683 8.60225 8.59679C6.41107 8.59683 4.63476 10.3732 4.63467 12.5644L4.63467 13.8869C4.63467 14.2521 4.33858 14.5481 3.9734 14.5482C3.60819 14.5482 3.31214 14.2521 3.31214 13.8869L3.31214 12.5644C3.31224 9.64279 5.68065 7.27431 8.60225 7.27426Z" fill="#FFFFFF"/><path fill-rule="nonzero" d="M4.03087 8.18577C4.16992 8.18578 4.30756 8.19276 4.44298 8.20651C3.9198 8.44732 3.47882 8.83539 3.17247 9.31771C1.92135 9.68778 1.00804 10.8452 1.0079 12.2163L1.0079 13.2242C1.00775 13.5023 0.782239 13.7279 0.504132 13.728C0.226149 13.7277 0.00015132 13.5022 0 13.2242L0 12.2163C0.000169767 9.9905 1.8051 8.18599 4.03087 8.18577Z" fill="#FFFFFF"/><path fill-rule="nonzero" d="M13.2293 8.18577C15.4552 8.18585 17.26 9.99042 17.2601 12.2163L17.2601 13.2242C17.26 13.5023 17.0341 13.7279 16.756 13.728C16.478 13.7278 16.2524 13.5022 16.2522 13.2242L16.2522 12.2163C16.2521 10.8453 15.3391 9.68779 14.088 9.31771C13.7817 8.83541 13.3407 8.4473 12.8175 8.20651C12.9529 8.19277 13.0903 8.18578 13.2293 8.18577Z" fill="#FFFFFF"/><path fill-rule="nonzero" d="M4.09889 2.64615C4.05575 2.85922 4.03306 3.07979 4.03305 3.30559C4.03305 3.42274 4.03972 3.53858 4.0516 3.65259C4.04441 3.65249 4.03699 3.65223 4.02978 3.65223C3.19527 3.65238 2.51869 4.3294 2.51848 5.16389C2.51851 5.99854 3.19516 6.67505 4.02978 6.6752C4.58414 6.67514 5.06883 6.37673 5.33194 5.93173C5.59791 6.13535 5.89531 6.29995 6.21617 6.41586C5.80188 7.13779 5.04049 7.63506 4.15963 7.67982L4.02978 7.6831C2.68207 7.68295 1.58127 6.62437 1.51385 5.29338L1.51058 5.16389C1.51078 3.81631 2.56944 2.71549 3.90029 2.64796L4.02978 2.64469C4.05282 2.64469 4.076 2.64553 4.09889 2.64615Z" fill="#FFFFFF"/><path fill-rule="nonzero" d="M13.3602 2.64796C14.6911 2.71546 15.7497 3.81629 15.7499 5.16389L15.7467 5.29338C15.6792 6.6244 14.5785 7.68299 13.2307 7.6831L13.1009 7.67982C12.22 7.63505 11.4586 7.13782 11.0443 6.41586C11.3652 6.29996 11.6626 6.13537 11.9286 5.93173C12.1916 6.37676 12.6763 6.67513 13.2307 6.6752C14.0654 6.67508 14.742 5.99857 14.742 5.16389C14.7418 4.32938 14.0653 3.65234 13.2307 3.65223C13.2236 3.65223 13.2164 3.65249 13.2093 3.65259C13.2212 3.53859 13.2275 3.42274 13.2275 3.30559C13.2274 3.07979 13.2048 2.85923 13.1616 2.64615C13.1846 2.64553 13.2076 2.64469 13.2307 2.64469L13.3602 2.64796Z" fill="#FFFFFF"/><path fill-rule="evenodd" d="M8.60152 0C10.4275 0 11.9077 1.48034 11.9078 3.30632C11.9078 5.13238 10.4276 6.61264 8.60152 6.61264C6.77552 6.61257 5.2952 5.13234 5.2952 3.30632C5.2953 1.48039 6.77558 6.76638e-05 8.60152 0ZM8.60152 1.32253C7.506 1.3226 6.61783 2.21081 6.61773 3.30632C6.61773 4.40191 7.50594 5.29004 8.60152 5.29011C9.69716 5.29011 10.5853 4.40195 10.5853 3.30632C10.5852 2.21077 9.69709 1.32253 8.60152 1.32253Z" fill="#FFFFFF"/></svg>
+<p class="ft" style="left:30.95rem;top:48.8rem;width:8.3rem;height:1.9rem;font:600 2rem/1.9rem 'Source Sans 3', sans-serif;text-align:left;letter-spacing:0.02rem;color:#FFFFFF">ONE</p>
+<p class="ft" style="left:30.95rem;top:51.3rem;width:8.3rem;height:1.3rem;font:600 1.4rem/1.33rem 'Source Sans 3', sans-serif;text-align:center;letter-spacing:0.014rem;color:#FFFFFF">MEMBERSHIP</p>
+<div class="fb" style="left:2.75rem;top:54.8rem;width:37.3rem;height:8.2rem;background:linear-gradient(rgba(0,0,0,0.51), rgba(0,0,0,0.51)), radial-gradient(18.65rem 7.863rem at 18.65rem 4.1rem, rgba(0,0,0,0.21) 31.07%, rgba(251,94,112,0.21) 100.00%);border-radius:2rem;-webkit-backdrop-filter:blur(9.13rem);backdrop-filter:blur(9.13rem)"><span class="fstroke" style="padding:0.1rem;background:linear-gradient(95.99deg, #FF0000 -45.42%, rgba(255,255,255,0.79) 39.55%, #FF0000 134.91%)"></span></div>
+<p class="ft" style="left:4.15rem;top:57.6rem;width:19.2rem;height:2.6rem;font:500 2.5rem/2.625rem 'Source Sans 3', sans-serif;text-align:left;text-transform:uppercase;color:#FFFFFF">GET STARTED FOR</p>
+<p class="ft" style="left:25.95rem;top:56.2rem;width:12.7rem;height:5.4rem;font:800 5.186rem/5.446rem 'Source Sans 3', sans-serif;text-align:left;text-transform:uppercase;color:#FFFFFF"><span data-pay-price="v1">14.5€</span></p>
+<a class="hit check-click" href="https://zubalenok.online/shop/item/13510" data-pay="v1" style="left:2.75rem;top:54.8rem;width:37.3rem;height:8.2rem"></a>
+<div class="fb" style="left:2.75rem;top:63.8rem;width:37.3rem;height:5.1rem;background:linear-gradient(6.27deg, #FF4D60 25.37%, #FA021D 79.42%);border-radius:4.961rem"></div>
+<p class="ft" style="left:8.333rem;top:65.4rem;width:22rem;height:1.9rem;font:600 2rem/1.9rem 'Source Sans 3', sans-serif;text-align:left;letter-spacing:0.02rem;text-transform:uppercase;color:#FFFFFF">EXPLORE ALL PROGRAMS</p>
+<svg class="fg" style="left:31.867rem;top:65.8rem;width:2.6rem;height:1.1rem" viewBox="0 0 26.0 11.0" aria-hidden="true"><path fill-rule="nonzero" d="M0 4.5C-0.552285 4.5 -1 4.94772 -1 5.5C-1 6.05228 -0.552285 6.5 0 6.5L0 5.5L0 4.5ZM26 5.5L26.6895 6.2243L27.4504 5.5L26.6895 4.7757L26 5.5ZM20.9117 -0.724304C20.5117 -1.10509 19.8787 -1.0895 19.4979 -0.689481C19.1171 -0.289459 19.1327 0.343514 19.5327 0.724304L20.2222 0L20.9117 -0.724304ZM19.5327 10.2757C19.1327 10.6565 19.1171 11.2895 19.4979 11.6895C19.8787 12.0895 20.5117 12.1051 20.9117 11.7243L20.2222 11L19.5327 10.2757ZM0 5.5L0 6.5L26 6.5L26 5.5L26 4.5L0 4.5L0 5.5ZM26 5.5L26.6895 4.7757L20.9117 -0.724304L20.2222 0L19.5327 0.724304L25.3105 6.2243L26 5.5ZM26 5.5L25.3105 4.7757L19.5327 10.2757L20.2222 11L20.9117 11.7243L26.6895 6.2243L26 5.5Z" fill="#FFFFFF"/></svg>
+<a class="hit check-click" href="https://zubalenok.online/shop/item/13510" data-pay="v1" style="left:2.75rem;top:63.8rem;width:37.3rem;height:5.1rem"></a>
+<div class="fb" style="left:2.4rem;top:70.3rem;width:6rem;height:3.2rem;background:radial-gradient(3rem 3.068rem at 3rem 1.6rem, rgba(0,0,0,0.21) 31.07%, rgba(251,94,112,0.21) 100.00%);border-radius:1.4rem"></div>
+<svg class="fg" style="left:3.2rem;top:71.1rem;width:1.6rem;height:1.6rem" viewBox="0 0 16.0 16.0" aria-hidden="true"><path fill-rule="nonzero" d="M8 0C3.58876 0 0 3.58876 0 8C0 12.4112 3.58876 16 8 16C12.4112 16 16 12.4112 16 8C16 3.58876 12.4112 0 8 0ZM11.3153 8.70882L6.72654 11.608C6.59054 11.6944 6.43373 11.7376 6.27853 11.7376C6.13933 11.7376 6.00012 11.7024 5.87372 11.6336C5.60651 11.4864 5.44011 11.2048 5.44011 10.8992L5.44011 5.10227C5.44011 4.79666 5.60651 4.51506 5.87372 4.36787C6.14093 4.22067 6.46732 4.23026 6.72654 4.39347L11.3153 7.29102C11.5601 7.44622 11.7057 7.71023 11.7057 7.99982C11.7057 8.28941 11.5601 8.55522 11.3153 8.70882Z" fill="#FFFFFF"/></svg>
+<p class="ft" style="left:5.2rem;top:71.25rem;width:2.4rem;height:1.3rem;font:600 1.4rem/1.33rem 'Source Sans 3', sans-serif;text-align:center;letter-spacing:0.014rem;color:#FFFFFF">TRY</p>
+<svg class="fg" style="left:9.514rem;top:71.25rem;width:1.723rem;height:1.3rem;opacity:0.5" viewBox="0 0 17.229 13.0" aria-hidden="true"><path fill-rule="nonzero" d="M9.27539 0.31058C9.65612 -0.0893421 10.2894 -0.10516 10.6895 0.275423L16.4668 5.77542L17.2285 6.50003L16.4668 7.22464L10.6895 12.7246C10.2894 13.1053 9.65613 13.0895 9.27539 12.6895C8.8948 12.2895 8.91059 11.6561 9.31055 11.2754L13.2764 7.50003L1 7.50003C0.447715 7.50003 0 7.05232 0 6.50003C3.55612e-05 5.94778 0.447737 5.50003 1 5.50003L13.2764 5.50003L9.31055 1.72464C8.91061 1.3439 8.89477 0.7106 9.27539 0.31058Z" fill="#FFFFFF"/></svg>
+<div class="fb" style="left:12.35rem;top:70.3rem;width:10rem;height:3.2rem;background:radial-gradient(5rem 3.068rem at 5rem 1.6rem, rgba(0,0,0,0.21) 31.07%, rgba(251,94,112,0.21) 100.00%);border-radius:1.4rem"></div>
+<svg class="fg" style="left:13.15rem;top:71.1rem;width:1.8rem;height:1.6rem" viewBox="0 0 18.0 16.0" aria-hidden="true"><path fill-rule="nonzero" d="M15.6429 0.729677C14.541 0.0354431 13.2241 -0.170912 11.9793 0.156805C10.7343 0.484522 9.66293 1.31907 8.99871 2.47796C8.10779 0.915344 6.49708 -0.0281014 4.7699 0.000638347C3.04355 0.0295302 1.4618 1.02671 0.617723 2.61828C-0.225517 4.20978 -0.20443 6.15538 0.674774 7.7255C2.35267 10.7079 5.20908 13.0151 8.99854 16C12.788 13.0151 15.6445 10.7079 17.3223 7.7255C17.9764 6.56158 18.1663 5.17231 17.8514 3.86064C17.5364 2.54896 16.7425 1.42302 15.6429 0.729677Z" fill="#FFFFFF"/></svg>
+<p class="ft" style="left:15.35rem;top:71.25rem;width:6.2rem;height:1.3rem;font:600 1.4rem/1.33rem 'Source Sans 3', sans-serif;text-align:center;letter-spacing:0.014rem;color:#FFFFFF">DISCOVER</p>
+<svg class="fg" style="left:23.464rem;top:71.25rem;width:1.723rem;height:1.3rem;opacity:0.5" viewBox="0 0 17.229 13.0" aria-hidden="true"><path fill-rule="nonzero" d="M9.27539 0.31058C9.65612 -0.0893421 10.2894 -0.10516 10.6895 0.275423L16.4668 5.77542L17.2285 6.50003L16.4668 7.22464L10.6895 12.7246C10.2894 13.1053 9.65613 13.0895 9.27539 12.6895C8.8948 12.2895 8.91059 11.6561 9.31055 11.2754L13.2764 7.50003L1 7.50003C0.447715 7.50003 0 7.05232 0 6.50003C3.55612e-05 5.94778 0.447737 5.50003 1 5.50003L13.2764 5.50003L9.31055 1.72464C8.91061 1.3439 8.89477 0.7106 9.27539 0.31058Z" fill="#FFFFFF"/></svg>
+<div class="fb" style="left:26.3rem;top:70.3rem;width:14.1rem;height:3.2rem;background:radial-gradient(7.05rem 3.068rem at 7.05rem 1.6rem, rgba(0,0,0,0.21) 31.07%, rgba(251,94,112,0.21) 100.00%);border-radius:1.4rem"></div>
+<svg class="fg" style="left:27.1rem;top:71.1rem;width:1.6rem;height:1.6rem" viewBox="0 0 16.0 16.0" aria-hidden="true"><path fill-rule="nonzero" d="M7.99978 16C12.4066 16 15.9996 12.4077 15.9996 8.00171C15.9996 7.17891 15.8759 6.36524 15.6279 5.57726C15.5574 5.34751 15.3093 5.2148 15.0704 5.28529C14.8406 5.3558 14.7079 5.6038 14.7784 5.84268C14.9999 6.5419 15.1144 7.26682 15.1144 8.00171C15.1144 11.9208 11.9196 15.115 7.99978 15.115C4.07995 15.115 0.885183 11.9208 0.885183 8.00171C0.885183 4.08262 4.07995 0.888443 7.99978 0.888443C8.73396 0.888443 9.45986 1.00374 10.1592 1.22436C10.3981 1.29486 10.6371 1.17128 10.7167 0.932397C10.7872 0.702649 10.6636 0.45464 10.4247 0.375014C9.63741 0.127005 8.82273 0.00342508 7.99978 0.00342508C3.59298 0.00342508 0 3.59573 0 8.00171C0 12.4077 3.59298 16 7.99978 16Z" fill="#FFFFFF"/><path fill-rule="nonzero" d="M9.1413 3.22414C9.17697 2.98527 9.00856 2.75552 8.76964 2.71985C8.5133 2.68418 8.25611 2.65764 7.99065 2.65764C5.04393 2.65764 2.64557 5.05555 2.64557 8.00172C2.64557 10.9479 5.04393 13.3458 7.99065 13.3458C10.9374 13.3458 13.3357 10.9479 13.3357 8.00172C13.3357 7.7363 13.3183 7.48829 13.2735 7.232C13.2378 6.99312 13.008 6.82474 12.7691 6.86041C12.5302 6.89608 12.3618 7.12583 12.3975 7.36471C12.4331 7.57705 12.4414 7.78025 12.4414 7.99259C12.4414 10.4519 10.4413 12.4517 7.98153 12.4517C5.52179 12.4517 3.53989 10.461 3.53989 8.00172C3.53989 5.54244 5.54005 3.54265 7.99979 3.54265C8.21217 3.54265 8.43367 3.56007 8.63692 3.58661C8.88497 3.62228 9.10562 3.46302 9.1413 3.22414Z" fill="#FFFFFF"/><path fill-rule="nonzero" d="M7.7874 6.21426C8.02632 6.18772 8.20302 5.96626 8.17647 5.7191C8.14993 5.47109 7.92014 5.29442 7.68121 5.3301C6.32732 5.48935 5.3094 6.63979 5.3094 8.00171C5.3094 9.48807 6.51315 10.6916 7.99978 10.6916C9.36281 10.6916 10.5043 9.67386 10.6719 8.32022C10.6984 8.08134 10.53 7.85987 10.2828 7.83333C10.0348 7.79766 9.82239 7.97516 9.78756 8.22233C9.68137 9.12476 8.91151 9.81485 7.99978 9.81485C7.00841 9.81485 6.19458 9.00118 6.19458 8.00999C6.19458 7.09015 6.87567 6.32043 7.7874 6.21426Z" fill="#FFFFFF"/><path fill-rule="nonzero" d="M15.973 2.6933C15.9108 2.53405 15.7515 2.41875 15.5748 2.41047L13.6634 2.33997L13.5921 0.428113C13.5829 0.251442 13.4768 0.100478 13.3092 0.0299818C13.1499 -0.0322264 12.9641 0.00343964 12.8313 0.127026L10.1592 2.79864C10.0705 2.88739 10.0265 3.00186 10.0265 3.12628L10.1061 5.24964L7.68123 7.6741C7.50452 7.85077 7.50452 8.12531 7.68123 8.30198C7.76999 8.39073 7.88448 8.43469 7.99066 8.43469C8.09684 8.43469 8.22045 8.39073 8.30009 8.30198L10.725 5.87752L12.8488 5.95715L12.8662 5.95715C12.9815 5.95715 13.096 5.91319 13.1756 5.82444L15.8477 3.15282C15.9904 3.03836 16.0344 2.85255 15.973 2.6933ZM12.7077 5.08209L10.9913 5.01158L10.9208 3.29548L12.7434 1.47321L12.7965 2.7829C12.8056 3.01265 12.9914 3.19844 13.2212 3.20758L14.5312 3.26066L12.7077 5.08209Z" fill="#FFFFFF"/></svg>
+<p class="ft" style="left:29.1rem;top:71.25rem;width:10.5rem;height:1.3rem;font:600 1.4rem/1.33rem 'Source Sans 3', sans-serif;text-align:center;letter-spacing:0.014rem;color:#FFFFFF">FIND YOUR FLOW</p>
+<p class="ft" style="left:4.55rem;top:3.5rem;width:33.5rem;height:3rem;font:400 2.659rem/2.951rem 'Anton', sans-serif;text-align:center;letter-spacing:0.027rem;color:#FFFFFF">YOUR FIRST MONTHIS FOR FINDING</p>
+<p class="ft fg-text" style="left:2.4rem;top:6.9rem;width:37.8rem;height:7.1rem;font:400 7.2rem/7.128rem 'Anton', sans-serif;text-align:center;letter-spacing:0.36rem;background-image:linear-gradient(90.00deg, #FD7382 0.00%, #F83A4F 100.00%)">YOUR FLOW</p>
+<p class="ft" style="left:2.4rem;top:15.4rem;width:37.8rem;height:1.4rem;font:600 1.462rem/1.389rem 'Source Sans 3', sans-serif;text-align:center;letter-spacing:0.015rem;color:#FFFFFF">Explore different workoutsand find what fits your goals</p>
+</section>
+
+<section class="sec sec-programs" style="height:149.29rem">
+<img class="art" src="img/sec-programs.webp" width="428" height="1493" alt="" loading="lazy" decoding="async">
+<p class="t p16b tcx" style="left:3.64rem;width:39.16rem;top:5.44rem">SO WHAT DO YOU GET FOR 14,5€?</p>
+<p class="t h62_2 tcx" style="left:0;width:42.7rem;top:13.55rem"><span class="g">EVERY PROGRAM</span></p>
+<p class="t h58_3 tcx" style="left:0;width:42.7rem;top:20.23rem">ONE MEMBERSHIP</p>
+<p class="t p16 tc" style="top:29.55rem">Splits · Mobility · Strength</p>
+<p class="t p16m tc" style="top:35.34rem">FRONT + MIDDLE SPLIT</p>
+<p class="t p16m tc" style="top:55.39rem">MOBILITY + FLEXIBILITY</p>
+<p class="t p16m tc" style="top:75.44rem">STRENGTH</p>
+<div class="s2-grid-wrapper">
+  <button type="button" class="program" data-slide="11" style="left:2.8rem;top:38.5rem;width:18.1rem;height:13.25rem" aria-label="Reach your front split"></button>
+  <button type="button" class="program" data-slide="12" style="left:21.9rem;top:38.5rem;width:18.1rem;height:13.25rem" aria-label="Open your middle split"></button>
+  <button type="button" class="program" data-slide="3" style="left:2.8rem;top:58.55rem;width:8.54rem;height:13.25rem" aria-label="Upper Body Mobility"></button>
+  <button type="button" class="program" data-slide="6" style="left:12.35rem;top:58.55rem;width:8.54rem;height:13.25rem" aria-label="Beginner Mobility"></button>
+  <button type="button" class="program" data-slide="15" style="left:21.9rem;top:58.55rem;width:8.54rem;height:13.25rem" aria-label="Hip Mobility"></button>
+  <button type="button" class="program" data-slide="5" style="left:31.46rem;top:58.55rem;width:8.54rem;height:13.25rem" aria-label="Full Body Mobility"></button>
+  <button type="button" class="program" data-slide="10" style="left:2.8rem;top:78.6rem;width:8.54rem;height:13.25rem" aria-label="Glutes Program"></button>
+  <button type="button" class="program" data-slide="9" style="left:12.35rem;top:78.6rem;width:8.54rem;height:13.25rem" aria-label="Strong Core Program"></button>
+  <button type="button" class="program" data-slide="0" style="left:21.9rem;top:78.6rem;width:8.54rem;height:13.25rem" aria-label="Fit Program"></button>
+  <button type="button" class="program" data-slide="4" style="left:31.46rem;top:78.6rem;width:8.54rem;height:13.25rem" aria-label="Handstand Mastery"></button>
+</div>
+<p class="t p16b tc" style="top:95.59rem">ALL GUIDES &amp; TOOLS INCLUDED</p>
+<p class="t p14b tcx" style="left:0;width:17rem;top:116.77rem">Food Tracker</p>
+<p class="t p14 tcx" style="left:0;width:17rem;top:118.75rem;line-height:2rem">Track your<br>nutrition alongside<br>your training, 100+<br>recipes and macro<br>calculator inside</p>
+<p class="t p14b tc" style="top:116.8rem">SMART Goals</p>
+<p class="t p14 tc" style="top:118.78rem;line-height:2rem">Turn "I want to<br>move better" into a<br>weekly plan you<br>can actually follow</p>
+<p class="t p14b tcx" style="left:25.8rem;width:17rem;top:116.8rem">Habit Tracker</p>
+<p class="t p14 tcx" style="left:25.8rem;width:17rem;top:118.75rem;line-height:2rem">Track steps,<br>workouts, water,<br>sleep and recovery</p>
+<a class="hit check-click" href="https://zubalenok.online/shop/item/13510" data-pay="v1" style="left:2.4rem;top:133.39rem;width:38rem;height:8.6rem"><p class="t h32 tcx" style="left:0;width:38rem;top:2.42rem">UNLOCK ALL FOR JUST <span data-pay-price="v1">14.5€</span></p></a>
+<p class="t p14m tc" style="top:142.91rem">Join 60,000+ students already training with Karyna</p>
+</section>
+
+<section class="sec sec-bonuses" style="height:66.96rem">
+<img class="art" src="img/sec-bonuses.webp" width="428" height="670" alt="" loading="lazy" decoding="async">
+<p class="t p31b tcx" style="left:0.56rem;width:42.24rem;top:4.88rem;letter-spacing:0.56rem">TODAY ONLY:</p>
+<p class="t h43_7 tcx" style="left:0.79rem;width:42.01rem;top:8.62rem;letter-spacing:0.79rem"><span class="g">2 FREE BONUSES</span></p>
+<p class="t p18b tc" style="top:14.66rem">WITH YOUR ACCESS</p>
+<p class="t p21x" style="left:8.2rem;top:40.11rem;letter-spacing:0.13rem">3 BONUSES FROM  KARYNA</p>
+<p class="t p14b" style="left:8.2rem;top:43.19rem">Food Tracker + Community Access + Posture Fix</p>
+<p class="t p14" style="left:8.2rem;top:45.43rem;line-height:2rem">Supporting environment, nutrition hints, a calm back<br>and straight posture: the support layer for every<br>program inside</p>
+<p class="t p16b" style="left:8.2rem;top:52rem">Free with your membership today!</p>
+<p class="t p14b" style="left:6.4rem;top:58.99rem">Your free bonus pack expires in</p>
+<p class="t p23b v-timer-display tcx" style="left:25.16rem;width:17.64rem;top:58.47rem;letter-spacing:0.04rem"><span class="v-timer-val">00</span>:<span class="v-timer-val">59</span>:<span class="v-timer-val">45</span></p>
+</section>
+
+<section class="sec sec-madefor" style="height:65.2rem">
+<img class="art" src="img/sec-madefor.webp" width="428" height="652" alt="" loading="lazy" decoding="async">
+<p class="t h40 tc" style="top:4.4rem">ONE MEMBERSHIP IS</p>
+<p class="t h40 tc" style="top:9.1rem"><span class="g">MADE FOR YOU IF</span></p>
+<p class="t p18b" style="left:3.2rem;top:23.35rem;letter-spacing:0.02rem;line-height:1.99rem">You can't<br>pick one<br>course:</p>
+<p class="t p14" style="left:3.2rem;top:29.67rem;line-height:1.6rem">here you don't<br>have to choose</p>
+<p class="t p18b" style="left:16.13rem;top:23.35rem;letter-spacing:0.02rem;line-height:2rem">You started<br>many times<br>alone:</p>
+<p class="t p14" style="left:16.13rem;top:29.67rem;line-height:1.6rem">this time<br>thousands of<br>women train next<br>to you</p>
+<p class="t p18b" style="left:29.06rem;top:23.34rem;letter-spacing:0.03rem;line-height:2rem">You want<br>short<br>workouts:</p>
+<p class="t p14" style="left:29.07rem;top:29.67rem;line-height:1.6rem">from 15 minutes a<br>day, at home</p>
+</section>
+
+<section class="sec sec-member" style="height:80.1rem">
+<img class="art" src="img/sec-member.webp" width="428" height="801" alt="" loading="lazy" decoding="async">
+<p class="t h40 tc" style="top:6.05rem">YOUR MEMBER AREA</p>
+<p class="t h24 tc" style="top:10.99rem"><span class="g">ALL PROGRAMS IN ONE ACCOUNT</span></p>
+<p class="t p16b tcx" style="left:3.64rem;width:39.16rem;top:16.59rem">QUESTION 1: “WHY THIS OFFER?</p>
+<div class="swiper s4-swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide member-slide">
+      <img src="img/slide-lesson.webp" width="286" height="428" alt="" loading="lazy">
+      <p class="t p20b c-red" style="left:2.01rem;top:34.79rem">INSIDE A LESSON:</p>
+      <p class="t p14m c-black" style="left:2.01rem;top:37.43rem;line-height:1.7rem">Karyna guides every move, on-<br>screen timers count for you</p>
+    </div>
+    <div class="swiper-slide member-slide">
+      <img src="img/slide-device.webp" width="286" height="428" alt="" loading="lazy">
+      <p class="t p20b c-red" style="left:2.01rem;top:34.79rem">ANY DEVICE:</p>
+      <p class="t p14m c-black" style="left:2.01rem;top:37.42rem;line-height:1.7rem">phone, tablet, laptop or TV,<br>straight from your browser</p>
+    </div>
+    <div class="swiper-slide member-slide">
+      <img src="img/slide-courses.webp" width="286" height="428" alt="" loading="lazy">
+      <p class="t p20b c-red" style="left:2.01rem;top:34.79rem">ONE ACCOUNT:</p>
+      <p class="t p14m c-black" style="left:2.01rem;top:37.43rem;line-height:1.7rem">every program in one place,<br>switch goals anytime</p>
+    </div>
+  </div>
+</div>
+<div class="dots s4-pagination" style="top:71.8rem"></div>
+<button type="button" class="arrow s4-prev" style="left:30rem;top:70.15rem;width:4.5rem;height:4.5rem"><img src="img/arrow-prev.webp" width="45" height="45" alt="Previous"></button>
+<button type="button" class="arrow s4-next" style="left:35.9rem;top:70.15rem;width:4.5rem;height:4.5rem"><img src="img/arrow-next.webp" width="45" height="45" alt="Next"></button>
+</section>
+
+<section class="sec sec-wins" style="height:63.1rem">
+<img class="art" src="img/sec-wins.webp" width="428" height="631" alt="" loading="lazy" decoding="async">
+<p class="t h40" style="left:2.4rem;top:4.4rem">STUDENTS <span class="g">WINS</span></p>
+<p class="t p16" style="left:2.41rem;top:9.74rem">REAL WOMEN. REAL BODIES. REAL PROGRESS</p>
+<div class="swiper s7-swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide s7-slide" data-video="https://itden-cdn.b-cdn.net/stretching/sdk23o.MP4">
+      <div class="s7-video-wrapper"><img class="s7-img" src="img/win-1.webp" width="221" height="374" alt="Student result 1" loading="lazy"></div>
+    </div>
+    <div class="swiper-slide s7-slide">
+      <div class="s7-video-wrapper"><img class="s7-img" src="img/win-2.webp" width="226" height="374" alt="Student result 2" loading="lazy"></div>
+    </div>
+    <div class="swiper-slide s7-slide">
+      <div class="s7-video-wrapper"><img class="s7-img" src="img/gallery/1.webp" width="226" height="374" alt="Student result 3" loading="lazy"></div>
+    </div>
+    <div class="swiper-slide s7-slide">
+      <div class="s7-video-wrapper"><img class="s7-img" src="img/gallery/2.webp" width="226" height="374" alt="Student result 4" loading="lazy"></div>
+    </div>
+    <div class="swiper-slide s7-slide">
+      <div class="s7-video-wrapper"><img class="s7-img" src="img/gallery/3.webp" width="226" height="374" alt="Student result 5" loading="lazy"></div>
+    </div>
+    <div class="swiper-slide s7-slide">
+      <div class="s7-video-wrapper"><img class="s7-img" src="img/gallery/4.webp" width="226" height="374" alt="Student result 6" loading="lazy"></div>
+    </div>
+    <div class="swiper-slide s7-slide">
+      <div class="s7-video-wrapper"><img class="s7-img" src="img/gallery/6.webp" width="226" height="374" alt="Student result 7" loading="lazy"></div>
+    </div>
+    <div class="swiper-slide s7-slide">
+      <div class="s7-video-wrapper"><img class="s7-img" src="img/gallery/8.webp" width="221" height="374" alt="Student result 8" loading="lazy"></div>
+    </div>
+    <div class="swiper-slide s7-slide">
+      <div class="s7-video-wrapper"><img class="s7-img" src="img/gallery/9.webp" width="226" height="374" alt="Student result 9" loading="lazy"></div>
+    </div>
+    <div class="swiper-slide s7-slide">
+      <div class="s7-video-wrapper"><img class="s7-img" src="img/gallery/10.webp" width="221" height="374" alt="Student result 10" loading="lazy"></div>
+    </div>
+    <div class="swiper-slide s7-slide">
+      <div class="s7-video-wrapper"><img class="s7-img" src="img/gallery/11.webp" width="304" height="374" alt="Student result 11" loading="lazy"></div>
+    </div>
+    <div class="swiper-slide s7-slide">
+      <div class="s7-video-wrapper"><img class="s7-img" src="img/gallery/12.webp" width="221" height="374" alt="Student result 12" loading="lazy"></div>
+    </div>
+  </div>
+</div>
+<div class="dots s7-pagination" style="top:55.75rem"></div>
+<button type="button" class="arrow s7-prev" style="left:30rem;top:54.1rem;width:4.5rem;height:4.5rem"><img src="img/arrow-prev.webp" width="45" height="45" alt="Previous"></button>
+<button type="button" class="arrow s7-next" style="left:35.9rem;top:54.1rem;width:4.5rem;height:4.5rem"><img src="img/arrow-next.webp" width="45" height="45" alt="Next"></button>
+</section>
+
+<section class="sec sec-inside" style="height:69.7rem">
+<img class="art" src="img/sec-inside.webp" width="428" height="697" alt="" loading="lazy" decoding="async">
+<p class="t h40 tcx" style="left:0.94rem;width:41.86rem;top:4.4rem">SEE WHAT'S INSIDE</p>
+<p class="t p18 tc" style="top:9.86rem">EVERY PROGRAM. EVERY GOAL</p>
+<p class="t h30 tcx" style="left:0;width:23.1rem;top:16.53rem"><span class="g">SPLITS:</span></p>
+<p class="t p16 o70 tcx" style="left:0;width:23.1rem;top:20.21rem;line-height:2rem">front and middle split,<br>step by step</p>
+<p class="t h30 tcx" style="left:19.7rem;width:23.1rem;top:16.53rem"><span class="g">MOBILITY:</span></p>
+<p class="t p16 o70 tcx" style="left:19.7rem;width:23.1rem;top:20.21rem;line-height:2rem">hips, back and<br>shoulders moving free</p>
+<p class="t h30 tcx" style="left:0;width:23.1rem;top:39.53rem"><span class="g">BACK:</span></p>
+<p class="t p16 o70 tcx" style="left:0;width:23.26rem;top:43.21rem;line-height:2rem">build a strong, mobile<br>spine</p>
+<p class="t h30 tcx" style="left:19.7rem;width:23.1rem;top:39.53rem"><span class="g">STRENGTH:</span></p>
+<p class="t p16 o70 tcx" style="left:19.7rem;width:23.1rem;top:43.21rem;line-height:2rem">a body that holds every<br>result</p>
+<div class="video-card-item" style="left:2.4rem;top:25.11rem;width:18.3rem;height:10.1rem"><div class="video-wrapper-small"><video class="video-player" data-src="https://itden-cdn.b-cdn.net/vd/t3/1.mov" poster="img/poster-1.webp" playsinline loop muted preload="none"></video></div></div>
+<div class="video-card-item" style="left:22.1rem;top:25.11rem;width:18.3rem;height:10.1rem"><div class="video-wrapper-small"><video class="video-player" data-src="https://itden-cdn.b-cdn.net/vd/t3/2.mp4" poster="img/poster-2.webp" playsinline loop muted preload="none"></video></div></div>
+<div class="video-card-item" style="left:2.4rem;top:48.11rem;width:18.3rem;height:10.1rem"><div class="video-wrapper-small"><video class="video-player" data-src="https://itden-cdn.b-cdn.net/vd/t3/3.mp4" poster="img/poster-3.webp" playsinline loop muted preload="none"></video></div></div>
+<div class="video-card-item" style="left:22.1rem;top:48.11rem;width:18.3rem;height:10.1rem"><div class="video-wrapper-small"><video class="video-player" data-src="https://itden-cdn.b-cdn.net/vd/t3/4.mp4" poster="img/poster-4.webp" playsinline loop muted preload="none"></video></div></div>
+<div class="marquee" style="top:61.4rem"><div class="marquee__track" style="margin-left:-10.69rem"><div class="marquee__group"><div class="marquee__item marquee__item--text"><span>ON-SCREEN TIMERS</span><span class="marquee__dot">•</span><span>KARYNA EXPLAINS EVERY MOVE</span><span class="marquee__dot">•</span><span>FOLLOW ALONG, NO GUESSWORK</span><span class="marquee__dot">•</span></div><div class="marquee__item marquee__item--text"><span>ON-SCREEN TIMERS</span><span class="marquee__dot">•</span><span>KARYNA EXPLAINS EVERY MOVE</span><span class="marquee__dot">•</span><span>FOLLOW ALONG, NO GUESSWORK</span><span class="marquee__dot">•</span></div></div><div class="marquee__group" aria-hidden="true"><div class="marquee__item marquee__item--text"><span>ON-SCREEN TIMERS</span><span class="marquee__dot">•</span><span>KARYNA EXPLAINS EVERY MOVE</span><span class="marquee__dot">•</span><span>FOLLOW ALONG, NO GUESSWORK</span><span class="marquee__dot">•</span></div><div class="marquee__item marquee__item--text"><span>ON-SCREEN TIMERS</span><span class="marquee__dot">•</span><span>KARYNA EXPLAINS EVERY MOVE</span><span class="marquee__dot">•</span><span>FOLLOW ALONG, NO GUESSWORK</span><span class="marquee__dot">•</span></div></div></div></div>
+</section>
+
+<section class="sec sec-access" style="height:116.14rem">
+<img class="art" src="img/sec-access.webp" width="428" height="1161" alt="" loading="lazy" decoding="async">
+<p class="t h40 tc" style="top:4.4rem">CHOOSE <span class="g">YOUR ACCESS</span></p>
+<p class="t p18 tc" style="top:9.86rem">SAME LIBRARY. TWO WAYS TO OWN IT</p>
+<p class="t p16b tcx" style="left:3.64rem;width:39.16rem;top:14.54rem">WHAT YOU GET AFTER PAYMENT?</p>
+<p class="t p32x" style="left:4.9rem;top:22.69rem">MEMBERSHIP</p>
+<p class="t h50 c-cream" style="left:4.84rem;top:27.47rem;letter-spacing:0.1rem"><span data-pay-price="v1">14,5€</span></p>
+<p class="t p20" style="left:16.87rem;top:29.6rem">/month</p>
+<p class="t p14" style="left:4.9rem;top:36.16rem">Cancel anytime in 2 clicks. No calls, no questions</p>
+<p class="t p14" style="left:7.9rem;top:40.76rem">The full library of Karyna's programs</p>
+<p class="t p14" style="left:7.9rem;top:43.96rem">Every NEW release included the day it drops</p>
+<p class="t p14" style="left:7.9rem;top:47.36rem">Community inside</p>
+<a class="hit check-click" href="https://zubalenok.online/shop/item/13510" data-pay="v1" style="left:4.9rem;top:51.74rem;width:34.1rem;height:7.2rem"><p class="t h32 c-black tcx" style="left:0.26rem;width:33.84rem;top:1.45rem;letter-spacing:0.28rem">START FOR 14,5€</p></a>
+<p class="t p32x" style="left:4.9rem;top:66.72rem">LIFETIME</p>
+<p class="t h50" style="left:4.8rem;top:71.55rem;letter-spacing:0.03rem">399€</p>
+<p class="t p20" style="left:15.59rem;top:74.63rem">one payment</p>
+<p class="t p14" style="left:4.9rem;top:80.28rem">One payment. Nothing ever renews</p>
+<p class="t p14" style="left:7.9rem;top:84.88rem">Every program released to date, yours forever</p>
+<p class="t p14" style="left:7.9rem;top:88.08rem">Community inside</p>
+<p class="t p14" style="left:7.9rem;top:91.48rem">No expiry date</p>
+<a class="hit check-click" href="https://zubalenok.online/shop/item/13477" data-pay="v2" style="left:4.97rem;top:95.94rem;width:33.95rem;height:7.05rem"><p class="t h32 tcx" style="left:0.01rem;width:33.94rem;top:1.49rem">GET LIFETIME</p></a>
+<p class="t p16 tc" style="top:107.64rem;line-height:2rem">Membership includes all future releases. Lifetime covers<br>today's full library, forever.</p>
+</section>
+
+<section class="sec sec-guarantee" style="height:24.6rem">
+<img class="art" src="img/sec-guarantee.webp" width="428" height="246" alt="" loading="lazy" decoding="async">
+<p class="t p35x" style="left:13.24rem;top:6.94rem;letter-spacing:0.1rem">GUARANTEE</p>
+<p class="t p14" style="left:13.3rem;top:11.66rem;line-height:2rem"><b>We offer a 14-day money-back guarantee:</b><br>if the course doesn't meet your expectations,<br>we'll refund your payment. You risk nothing</p>
+</section>
+
+<section class="sec sec-math" style="height:126.66rem">
+<img class="art" src="img/sec-math.webp" width="428" height="1267" alt="" loading="lazy" decoding="async">
+<p class="t h40 tc" style="top:4.4rem">LET'S DO <span class="g">THE MATH</span></p>
+<p class="t p20" style="left:16.08rem;top:14.35rem">Is it worth 14.5<b>€</b> a month?</p>
+<p class="t p16b" style="left:10.6rem;top:24.25rem">1 studio class</p>
+<p class="t p16b" style="left:10.6rem;top:31.36rem">Mentorship &amp; support</p>
+<p class="t p16b" style="left:10.6rem;top:38.6rem">Community</p>
+<p class="t p16b" style="left:10.6rem;top:45.74rem">Karyna’s guidance</p>
+<p class="t p16b" style="left:10.6rem;top:51.94rem;line-height:2rem">Programs library<br>course by course</p>
+<p class="t p16b" style="left:10.6rem;top:59.09rem;line-height:2rem">Next updates/<br>releases to courses</p>
+<p class="t p18x" style="left:7.35rem;top:99.47rem">ALL OF THIS:</p>
+<p class="t r16 tc" style="top:104.12rem;line-height:1.9rem">One membership replaces courses, classes,<br>training plans and multiple fitness subscriptions</p>
+<a class="hit check-click" href="https://zubalenok.online/shop/item/13510" data-pay="v1" style="left:2.47rem;top:112.43rem;width:37.85rem;height:7.05rem"><p class="t h32 tcx" style="left:0.01rem;width:37.84rem;top:1.5rem">START MY MEMBERSHIP</p></a>
+<p class="t p14 tc" style="top:120.28rem">One decision. Everything included. Cancel whenever you want</p>
+</section>
+
+<section class="sec sec-works" style="height:77.8rem">
+<img class="art" src="img/sec-works.webp" width="428" height="778" alt="" loading="lazy" decoding="async">
+<p class="t h40 tcx" style="left:0;width:42.37rem;top:4rem;letter-spacing:0.08rem;line-height:4.8rem">WHY THIS<br>PROGRAM <span class="g">WORKS</span></p>
+<p class="t p14b" style="left:7.3rem;top:17.42rem">START</p>
+<p class="t p14b" style="left:16.2rem;top:17.42rem">FOLLOW</p>
+<p class="t p14b" style="left:26.4rem;top:17.42rem">SWITCH</p>
+<p class="t p14b" style="left:36.3rem;top:17.42rem">STAY</p>
+<p class="t p16b c-pink" style="left:21.02rem;top:23.69rem">START</p>
+<p class="t p16" style="left:21.02rem;top:25.8rem;line-height:2.3rem">Begin from zero with<br>beginner-friendly programs<br>and safe technique</p>
+<p class="t p16b c-pink" style="left:2.4rem;top:37.19rem">FOLLOW</p>
+<p class="t p16" style="left:2.4rem;top:39.3rem;line-height:2.3rem">Pick your goal and follow<br>the full program for it,<br>step by step</p>
+<p class="t p16b c-pink" style="left:21.02rem;top:50.69rem">SWITCH</p>
+<p class="t p16" style="left:21.02rem;top:52.8rem;line-height:2.3rem">New goal? Switch programs<br>inside one account, nothing<br>extra to buy</p>
+<p class="t p16b c-pink" style="left:2.4rem;top:64.19rem">STAY</p>
+<p class="t p16" style="left:2.4rem;top:66.3rem;line-height:2.3rem">New releases and the<br>community keep your<br>training alive for years</p>
+</section>
+
+<section class="sec sec-faq">
+<p class="t h40" style="left:2.44rem;top:4.5rem;letter-spacing:0.02rem">FAQ</p>
+<div class="faq-list">
+  <div class="s12-faq-item">
+    <div class="s12-faq-question">
+      <img class="faq-q" src="img/faq-q.webp" width="35" height="35" alt="Q">
+      <p class="faq-question">What exactly is included in my<br>membership?</p>
+      <svg class="faq-arrow" viewBox="395.9 12012.2 22.2 14" aria-hidden="true"><path d="M404.494 12020.2C402.788 12022.5 400.482 12026.2 398.482 12026.2C396.682 12026.2 396.114 12025.5 395.983 12023.7C395.8 12021.2 399.736 12020 401.494 12018.2C402.959 12016.7 404.618 12014.3 405.453 12013C405.794 12012.5 406.368 12012.2 406.988 12012.2C407.608 12012.2 408.183 12012.5 408.524 12013C409.359 12014.3 411.017 12016.7 412.483 12018.2C414.241 12020 418.177 12021.2 417.994 12023.7C417.862 12025.5 417.294 12026.2 415.494 12026.2C413.494 12026.2 411.189 12022.5 409.483 12020.2C408.779 12019.2 407.938 12017.8 407.436 12016.9C407.24 12016.6 406.747 12016.6 406.549 12016.9C406.044 12017.8 405.198 12019.2 404.494 12020.2Z" fill="currentColor"/></svg>
+    </div>
+    <div class="s12-faq-answer-wrapper">
+      <div class="faq-answer">
+        <div class="faq-bubble">Everything. Every program I have ever<br>released: splits, mobility, back and<br>strength, all in one account. Plus the<br>community and every new program I<br>release<svg class="faq-tail" viewBox="314.5 12128.7 35.3 26" aria-hidden="true"><path d="M346 12147.2C343.5 12141.7 343.5 12129.2 343.5 12129.2L340.5 12128.7L314.5 12154.7H348.786C349.647 12154.7 350.131 12153.6 349.607 12153C348.504 12151.5 346.99 12149.4 346 12147.2Z" fill="currentColor"/></svg></div>
+        <img class="faq-avatar" src="img/ic.webp" width="59" height="59" alt="Karyna" loading="lazy">
+      </div>
+    </div>
+  </div>
+  <div class="s12-faq-item">
+    <div class="s12-faq-question">
+      <img class="faq-q" src="img/faq-q.webp" width="35" height="35" alt="Q">
+      <p class="faq-question">Will I be charged automatically?</p>
+      <svg class="faq-arrow" viewBox="395.9 12012.2 22.2 14" aria-hidden="true"><path d="M404.494 12020.2C402.788 12022.5 400.482 12026.2 398.482 12026.2C396.682 12026.2 396.114 12025.5 395.983 12023.7C395.8 12021.2 399.736 12020 401.494 12018.2C402.959 12016.7 404.618 12014.3 405.453 12013C405.794 12012.5 406.368 12012.2 406.988 12012.2C407.608 12012.2 408.183 12012.5 408.524 12013C409.359 12014.3 411.017 12016.7 412.483 12018.2C414.241 12020 418.177 12021.2 417.994 12023.7C417.862 12025.5 417.294 12026.2 415.494 12026.2C413.494 12026.2 411.189 12022.5 409.483 12020.2C408.779 12019.2 407.938 12017.8 407.436 12016.9C407.24 12016.6 406.747 12016.6 406.549 12016.9C406.044 12017.8 405.198 12019.2 404.494 12020.2Z" fill="currentColor"/></svg>
+    </div>
+    <div class="s12-faq-answer-wrapper">
+      <div class="faq-answer">
+        <div class="faq-bubble">Yes, 29€ renews monthly so your access<br>never breaks. And you can cancel<br>anytime in 2 clicks in your account. You<br>keep access until the end of your paid<br>month<svg class="faq-tail" viewBox="314.5 12128.7 35.3 26" aria-hidden="true"><path d="M346 12147.2C343.5 12141.7 343.5 12129.2 343.5 12129.2L340.5 12128.7L314.5 12154.7H348.786C349.647 12154.7 350.131 12153.6 349.607 12153C348.504 12151.5 346.99 12149.4 346 12147.2Z" fill="currentColor"/></svg></div>
+        <img class="faq-avatar" src="img/ic.webp" width="59" height="59" alt="Karyna" loading="lazy">
+      </div>
+    </div>
+  </div>
+  <div class="s12-faq-item">
+    <div class="s12-faq-question">
+      <img class="faq-q" src="img/faq-q.webp" width="35" height="35" alt="Q">
+      <p class="faq-question">How do I cancel?</p>
+      <svg class="faq-arrow" viewBox="395.9 12012.2 22.2 14" aria-hidden="true"><path d="M404.494 12020.2C402.788 12022.5 400.482 12026.2 398.482 12026.2C396.682 12026.2 396.114 12025.5 395.983 12023.7C395.8 12021.2 399.736 12020 401.494 12018.2C402.959 12016.7 404.618 12014.3 405.453 12013C405.794 12012.5 406.368 12012.2 406.988 12012.2C407.608 12012.2 408.183 12012.5 408.524 12013C409.359 12014.3 411.017 12016.7 412.483 12018.2C414.241 12020 418.177 12021.2 417.994 12023.7C417.862 12025.5 417.294 12026.2 415.494 12026.2C413.494 12026.2 411.189 12022.5 409.483 12020.2C408.779 12019.2 407.938 12017.8 407.436 12016.9C407.24 12016.6 406.747 12016.6 406.549 12016.9C406.044 12017.8 405.198 12019.2 404.494 12020.2Z" fill="currentColor"/></svg>
+    </div>
+    <div class="s12-faq-answer-wrapper">
+      <div class="faq-answer">
+        <div class="faq-bubble">In your account, 2 clicks, no calls and no<br>"retention specialists". You are always in<br>control<svg class="faq-tail" viewBox="314.5 12128.7 35.3 26" aria-hidden="true"><path d="M346 12147.2C343.5 12141.7 343.5 12129.2 343.5 12129.2L340.5 12128.7L314.5 12154.7H348.786C349.647 12154.7 350.131 12153.6 349.607 12153C348.504 12151.5 346.99 12149.4 346 12147.2Z" fill="currentColor"/></svg></div>
+        <img class="faq-avatar" src="img/ic.webp" width="59" height="59" alt="Karyna" loading="lazy">
+      </div>
+    </div>
+  </div>
+  <div class="s12-faq-item">
+    <div class="s12-faq-question">
+      <img class="faq-q" src="img/faq-q.webp" width="35" height="35" alt="Q">
+      <p class="faq-question">What's the difference between Membership<br>and Lifetime?</p>
+      <svg class="faq-arrow" viewBox="395.9 12012.2 22.2 14" aria-hidden="true"><path d="M404.494 12020.2C402.788 12022.5 400.482 12026.2 398.482 12026.2C396.682 12026.2 396.114 12025.5 395.983 12023.7C395.8 12021.2 399.736 12020 401.494 12018.2C402.959 12016.7 404.618 12014.3 405.453 12013C405.794 12012.5 406.368 12012.2 406.988 12012.2C407.608 12012.2 408.183 12012.5 408.524 12013C409.359 12014.3 411.017 12016.7 412.483 12018.2C414.241 12020 418.177 12021.2 417.994 12023.7C417.862 12025.5 417.294 12026.2 415.494 12026.2C413.494 12026.2 411.189 12022.5 409.483 12020.2C408.779 12019.2 407.938 12017.8 407.436 12016.9C407.24 12016.6 406.747 12016.6 406.549 12016.9C406.044 12017.8 405.198 12019.2 404.494 12020.2Z" fill="currentColor"/></svg>
+    </div>
+    <div class="s12-faq-answer-wrapper">
+      <div class="faq-answer">
+        <div class="faq-bubble">Membership (29€/month) gives you the<br>full library and every new program I<br>release, for as long as you stay. Lifetime<br>(199€) gives you today's full library<br>forever with one payment<svg class="faq-tail" viewBox="314.5 12128.7 35.3 26" aria-hidden="true"><path d="M346 12147.2C343.5 12141.7 343.5 12129.2 343.5 12129.2L340.5 12128.7L314.5 12154.7H348.786C349.647 12154.7 350.131 12153.6 349.607 12153C348.504 12151.5 346.99 12149.4 346 12147.2Z" fill="currentColor"/></svg></div>
+        <img class="faq-avatar" src="img/ic.webp" width="59" height="59" alt="Karyna" loading="lazy">
+      </div>
+    </div>
+  </div>
+  <div class="s12-faq-item">
+    <div class="s12-faq-question">
+      <img class="faq-q" src="img/faq-q.webp" width="35" height="35" alt="Q">
+      <p class="faq-question">My body is very stiff. Is it too hard for me?</p>
+      <svg class="faq-arrow" viewBox="395.9 12012.2 22.2 14" aria-hidden="true"><path d="M404.494 12020.2C402.788 12022.5 400.482 12026.2 398.482 12026.2C396.682 12026.2 396.114 12025.5 395.983 12023.7C395.8 12021.2 399.736 12020 401.494 12018.2C402.959 12016.7 404.618 12014.3 405.453 12013C405.794 12012.5 406.368 12012.2 406.988 12012.2C407.608 12012.2 408.183 12012.5 408.524 12013C409.359 12014.3 411.017 12016.7 412.483 12018.2C414.241 12020 418.177 12021.2 417.994 12023.7C417.862 12025.5 417.294 12026.2 415.494 12026.2C413.494 12026.2 411.189 12022.5 409.483 12020.2C408.779 12019.2 407.938 12017.8 407.436 12016.9C407.24 12016.6 406.747 12016.6 406.549 12016.9C406.044 12017.8 405.198 12019.2 404.494 12020.2Z" fill="currentColor"/></svg>
+    </div>
+    <div class="s12-faq-answer-wrapper">
+      <div class="faq-answer">
+        <div class="faq-bubble">No. The library includes beginner<br>programs with easy ranges and safe<br>technique. 80% of students start exactly<br>where you are<svg class="faq-tail" viewBox="314.5 12128.7 35.3 26" aria-hidden="true"><path d="M346 12147.2C343.5 12141.7 343.5 12129.2 343.5 12129.2L340.5 12128.7L314.5 12154.7H348.786C349.647 12154.7 350.131 12153.6 349.607 12153C348.504 12151.5 346.99 12149.4 346 12147.2Z" fill="currentColor"/></svg></div>
+        <img class="faq-avatar" src="img/ic.webp" width="59" height="59" alt="Karyna" loading="lazy">
+      </div>
+    </div>
+  </div>
+  <div class="s12-faq-item">
+    <div class="s12-faq-question">
+      <img class="faq-q" src="img/faq-q.webp" width="35" height="35" alt="Q">
+      <p class="faq-question">How much time do I need per day?</p>
+      <svg class="faq-arrow" viewBox="395.9 12012.2 22.2 14" aria-hidden="true"><path d="M404.494 12020.2C402.788 12022.5 400.482 12026.2 398.482 12026.2C396.682 12026.2 396.114 12025.5 395.983 12023.7C395.8 12021.2 399.736 12020 401.494 12018.2C402.959 12016.7 404.618 12014.3 405.453 12013C405.794 12012.5 406.368 12012.2 406.988 12012.2C407.608 12012.2 408.183 12012.5 408.524 12013C409.359 12014.3 411.017 12016.7 412.483 12018.2C414.241 12020 418.177 12021.2 417.994 12023.7C417.862 12025.5 417.294 12026.2 415.494 12026.2C413.494 12026.2 411.189 12022.5 409.483 12020.2C408.779 12019.2 407.938 12017.8 407.436 12016.9C407.24 12016.6 406.747 12016.6 406.549 12016.9C406.044 12017.8 405.198 12019.2 404.494 12020.2Z" fill="currentColor"/></svg>
+    </div>
+    <div class="s12-faq-answer-wrapper">
+      <div class="faq-answer">
+        <div class="faq-bubble">15-20 minutes. Every lesson is fully<br>planned with on-screen timers<svg class="faq-tail" viewBox="314.5 12128.7 35.3 26" aria-hidden="true"><path d="M346 12147.2C343.5 12141.7 343.5 12129.2 343.5 12129.2L340.5 12128.7L314.5 12154.7H348.786C349.647 12154.7 350.131 12153.6 349.607 12153C348.504 12151.5 346.99 12149.4 346 12147.2Z" fill="currentColor"/></svg></div>
+        <img class="faq-avatar" src="img/ic.webp" width="59" height="59" alt="Karyna" loading="lazy">
+      </div>
+    </div>
+  </div>
+  <div class="s12-faq-item">
+    <div class="s12-faq-question">
+      <img class="faq-q" src="img/faq-q.webp" width="35" height="35" alt="Q">
+      <p class="faq-question">What if I miss a few days or a week?</p>
+      <svg class="faq-arrow" viewBox="395.9 12012.2 22.2 14" aria-hidden="true"><path d="M404.494 12020.2C402.788 12022.5 400.482 12026.2 398.482 12026.2C396.682 12026.2 396.114 12025.5 395.983 12023.7C395.8 12021.2 399.736 12020 401.494 12018.2C402.959 12016.7 404.618 12014.3 405.453 12013C405.794 12012.5 406.368 12012.2 406.988 12012.2C407.608 12012.2 408.183 12012.5 408.524 12013C409.359 12014.3 411.017 12016.7 412.483 12018.2C414.241 12020 418.177 12021.2 417.994 12023.7C417.862 12025.5 417.294 12026.2 415.494 12026.2C413.494 12026.2 411.189 12022.5 409.483 12020.2C408.779 12019.2 407.938 12017.8 407.436 12016.9C407.24 12016.6 406.747 12016.6 406.549 12016.9C406.044 12017.8 405.198 12019.2 404.494 12020.2Z" fill="currentColor"/></svg>
+    </div>
+    <div class="s12-faq-answer-wrapper">
+      <div class="faq-answer">
+        <div class="faq-bubble">Nothing bad happens. Your programs<br>wait for you. Continue at your own pace<svg class="faq-tail" viewBox="314.5 12128.7 35.3 26" aria-hidden="true"><path d="M346 12147.2C343.5 12141.7 343.5 12129.2 343.5 12129.2L340.5 12128.7L314.5 12154.7H348.786C349.647 12154.7 350.131 12153.6 349.607 12153C348.504 12151.5 346.99 12149.4 346 12147.2Z" fill="currentColor"/></svg></div>
+        <img class="faq-avatar" src="img/ic.webp" width="59" height="59" alt="Karyna" loading="lazy">
+      </div>
+    </div>
+  </div>
+  <div class="s12-faq-item">
+    <div class="s12-faq-question">
+      <img class="faq-q" src="img/faq-q.webp" width="35" height="35" alt="Q">
+      <p class="faq-question">What is the community?</p>
+      <svg class="faq-arrow" viewBox="395.9 12012.2 22.2 14" aria-hidden="true"><path d="M404.494 12020.2C402.788 12022.5 400.482 12026.2 398.482 12026.2C396.682 12026.2 396.114 12025.5 395.983 12023.7C395.8 12021.2 399.736 12020 401.494 12018.2C402.959 12016.7 404.618 12014.3 405.453 12013C405.794 12012.5 406.368 12012.2 406.988 12012.2C407.608 12012.2 408.183 12012.5 408.524 12013C409.359 12014.3 411.017 12016.7 412.483 12018.2C414.241 12020 418.177 12021.2 417.994 12023.7C417.862 12025.5 417.294 12026.2 415.494 12026.2C413.494 12026.2 411.189 12022.5 409.483 12020.2C408.779 12019.2 407.938 12017.8 407.436 12016.9C407.24 12016.6 406.747 12016.6 406.549 12016.9C406.044 12017.8 405.198 12019.2 404.494 12020.2Z" fill="currentColor"/></svg>
+    </div>
+    <div class="s12-faq-answer-wrapper">
+      <div class="faq-answer">
+        <div class="faq-bubble">A private space where students share<br>progress, ask questions and support each<br>other. You train at home, but never alone<svg class="faq-tail" viewBox="314.5 12128.7 35.3 26" aria-hidden="true"><path d="M346 12147.2C343.5 12141.7 343.5 12129.2 343.5 12129.2L340.5 12128.7L314.5 12154.7H348.786C349.647 12154.7 350.131 12153.6 349.607 12153C348.504 12151.5 346.99 12149.4 346 12147.2Z" fill="currentColor"/></svg></div>
+        <img class="faq-avatar" src="img/ic.webp" width="59" height="59" alt="Karyna" loading="lazy">
+      </div>
+    </div>
+  </div>
+  <div class="s12-faq-item">
+    <div class="s12-faq-question">
+      <img class="faq-q" src="img/faq-q.webp" width="35" height="35" alt="Q">
+      <p class="faq-question">Can I watch the lessons on my phone,<br>tablet or TV?</p>
+      <svg class="faq-arrow" viewBox="395.9 12012.2 22.2 14" aria-hidden="true"><path d="M404.494 12020.2C402.788 12022.5 400.482 12026.2 398.482 12026.2C396.682 12026.2 396.114 12025.5 395.983 12023.7C395.8 12021.2 399.736 12020 401.494 12018.2C402.959 12016.7 404.618 12014.3 405.453 12013C405.794 12012.5 406.368 12012.2 406.988 12012.2C407.608 12012.2 408.183 12012.5 408.524 12013C409.359 12014.3 411.017 12016.7 412.483 12018.2C414.241 12020 418.177 12021.2 417.994 12023.7C417.862 12025.5 417.294 12026.2 415.494 12026.2C413.494 12026.2 411.189 12022.5 409.483 12020.2C408.779 12019.2 407.938 12017.8 407.436 12016.9C407.24 12016.6 406.747 12016.6 406.549 12016.9C406.044 12017.8 405.198 12019.2 404.494 12020.2Z" fill="currentColor"/></svg>
+    </div>
+    <div class="s12-faq-answer-wrapper">
+      <div class="faq-answer">
+        <div class="faq-bubble">Yes. Open your member area on any<br>device with a browser. Many students<br>cast the lessons to their TV<svg class="faq-tail" viewBox="314.5 12128.7 35.3 26" aria-hidden="true"><path d="M346 12147.2C343.5 12141.7 343.5 12129.2 343.5 12129.2L340.5 12128.7L314.5 12154.7H348.786C349.647 12154.7 350.131 12153.6 349.607 12153C348.504 12151.5 346.99 12149.4 346 12147.2Z" fill="currentColor"/></svg></div>
+        <img class="faq-avatar" src="img/ic.webp" width="59" height="59" alt="Karyna" loading="lazy">
+      </div>
+    </div>
+  </div>
+  <div class="s12-faq-item">
+    <div class="s12-faq-question">
+      <img class="faq-q" src="img/faq-q.webp" width="35" height="35" alt="Q">
+      <p class="faq-question">I'm 40+. Will this work for my body?</p>
+      <svg class="faq-arrow" viewBox="395.9 12012.2 22.2 14" aria-hidden="true"><path d="M404.494 12020.2C402.788 12022.5 400.482 12026.2 398.482 12026.2C396.682 12026.2 396.114 12025.5 395.983 12023.7C395.8 12021.2 399.736 12020 401.494 12018.2C402.959 12016.7 404.618 12014.3 405.453 12013C405.794 12012.5 406.368 12012.2 406.988 12012.2C407.608 12012.2 408.183 12012.5 408.524 12013C409.359 12014.3 411.017 12016.7 412.483 12018.2C414.241 12020 418.177 12021.2 417.994 12023.7C417.862 12025.5 417.294 12026.2 415.494 12026.2C413.494 12026.2 411.189 12022.5 409.483 12020.2C408.779 12019.2 407.938 12017.8 407.436 12016.9C407.24 12016.6 406.747 12016.6 406.549 12016.9C406.044 12017.8 405.198 12019.2 404.494 12020.2Z" fill="currentColor"/></svg>
+    </div>
+    <div class="s12-faq-answer-wrapper">
+      <div class="faq-answer">
+        <div class="faq-bubble">Age doesn't matter. We have students in<br>their 50s and 60s making great progress.<br>Choose the range that feels safe and stay<br>consistent<svg class="faq-tail" viewBox="314.5 12128.7 35.3 26" aria-hidden="true"><path d="M346 12147.2C343.5 12141.7 343.5 12129.2 343.5 12129.2L340.5 12128.7L314.5 12154.7H348.786C349.647 12154.7 350.131 12153.6 349.607 12153C348.504 12151.5 346.99 12149.4 346 12147.2Z" fill="currentColor"/></svg></div>
+        <img class="faq-avatar" src="img/ic.webp" width="59" height="59" alt="Karyna" loading="lazy">
+      </div>
+    </div>
+  </div>
+  <div class="s12-faq-item">
+    <div class="s12-faq-question">
+      <img class="faq-q" src="img/faq-q.webp" width="35" height="35" alt="Q">
+      <p class="faq-question">What are the terms of the money-back<br>guarantee?</p>
+      <svg class="faq-arrow" viewBox="395.9 12012.2 22.2 14" aria-hidden="true"><path d="M404.494 12020.2C402.788 12022.5 400.482 12026.2 398.482 12026.2C396.682 12026.2 396.114 12025.5 395.983 12023.7C395.8 12021.2 399.736 12020 401.494 12018.2C402.959 12016.7 404.618 12014.3 405.453 12013C405.794 12012.5 406.368 12012.2 406.988 12012.2C407.608 12012.2 408.183 12012.5 408.524 12013C409.359 12014.3 411.017 12016.7 412.483 12018.2C414.241 12020 418.177 12021.2 417.994 12023.7C417.862 12025.5 417.294 12026.2 415.494 12026.2C413.494 12026.2 411.189 12022.5 409.483 12020.2C408.779 12019.2 407.938 12017.8 407.436 12016.9C407.24 12016.6 406.747 12016.6 406.549 12016.9C406.044 12017.8 405.198 12019.2 404.494 12020.2Z" fill="currentColor"/></svg>
+    </div>
+    <div class="s12-faq-answer-wrapper">
+      <div class="faq-answer">
+        <div class="faq-bubble">14 days from purchase, full refund, no<br>questions. Just message our support<svg class="faq-tail" viewBox="314.5 12128.7 35.3 26" aria-hidden="true"><path d="M346 12147.2C343.5 12141.7 343.5 12129.2 343.5 12129.2L340.5 12128.7L314.5 12154.7H348.786C349.647 12154.7 350.131 12153.6 349.607 12153C348.504 12151.5 346.99 12149.4 346 12147.2Z" fill="currentColor"/></svg></div>
+        <img class="faq-avatar" src="img/ic.webp" width="59" height="59" alt="Karyna" loading="lazy">
+      </div>
+    </div>
+  </div>
+  <div class="s12-faq-item">
+    <div class="s12-faq-question">
+      <img class="faq-q" src="img/faq-q.webp" width="35" height="35" alt="Q">
+      <p class="faq-question">How do I get my bonus guides?</p>
+      <svg class="faq-arrow" viewBox="395.9 12012.2 22.2 14" aria-hidden="true"><path d="M404.494 12020.2C402.788 12022.5 400.482 12026.2 398.482 12026.2C396.682 12026.2 396.114 12025.5 395.983 12023.7C395.8 12021.2 399.736 12020 401.494 12018.2C402.959 12016.7 404.618 12014.3 405.453 12013C405.794 12012.5 406.368 12012.2 406.988 12012.2C407.608 12012.2 408.183 12012.5 408.524 12013C409.359 12014.3 411.017 12016.7 412.483 12018.2C414.241 12020 418.177 12021.2 417.994 12023.7C417.862 12025.5 417.294 12026.2 415.494 12026.2C413.494 12026.2 411.189 12022.5 409.483 12020.2C408.779 12019.2 407.938 12017.8 407.436 12016.9C407.24 12016.6 406.747 12016.6 406.549 12016.9C406.044 12017.8 405.198 12019.2 404.494 12020.2Z" fill="currentColor"/></svg>
+    </div>
+    <div class="s12-faq-answer-wrapper">
+      <div class="faq-answer">
+        <div class="faq-bubble">Access to your member area and all 3<br>bonus guides arrives in one email right<br>after payment<svg class="faq-tail" viewBox="314.5 12128.7 35.3 26" aria-hidden="true"><path d="M346 12147.2C343.5 12141.7 343.5 12129.2 343.5 12129.2L340.5 12128.7L314.5 12154.7H348.786C349.647 12154.7 350.131 12153.6 349.607 12153C348.504 12151.5 346.99 12149.4 346 12147.2Z" fill="currentColor"/></svg></div>
+        <img class="faq-avatar" src="img/ic.webp" width="59" height="59" alt="Karyna" loading="lazy">
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="sec sec-today" style="height:58.99rem">
+<img class="art" src="img/sec-today.webp" width="428" height="590" alt="" loading="lazy" decoding="async">
+<p class="t p25b" style="left:4.89rem;top:9.82rem">EVERYTHING YOU GET TODAY</p>
+<p class="t p14" style="left:7.9rem;top:15.92rem">The full library: every program by Karyna</p>
+<p class="t p14" style="left:7.9rem;top:19.52rem">Every new release, straight into your account</p>
+<p class="t p14" style="left:7.9rem;top:23.32rem">The community</p>
+<p class="t p14" style="left:7.9rem;top:26.64rem;line-height:1.85rem">3 bonus guides: Food Tracker, Back Reset, Posture<br>Fix</p>
+<p class="t p14" style="left:7.9rem;top:31.92rem">14-day money back guarantee</p>
+<p class="t p20b" style="left:4.9rem;top:38.33rem">All of it:</p>
+<a class="hit check-click" href="https://zubalenok.online/shop/item/13510" data-pay="v1" style="left:4.9rem;top:43.54rem;width:33rem;height:7.2rem"><p class="t h28 c-black tcx" style="left:0.22rem;width:32.78rem;top:1.93rem;letter-spacing:0.22rem">START MY MEMBERSHIP</p></a>
+<p class="t p14 tc" style="top:51.57rem">Cancel anytime in 2 clicks</p>
+</section>
+
+<section class="sec sec-contacts" style="height:35.52rem">
+<img class="art" src="img/sec-contacts.webp" width="428" height="355" alt="" loading="lazy" decoding="async">
+<p class="t h40" style="left:2.43rem;top:4.6rem">CONTACTS</p>
+<a class="hit" href="https://www.instagram.com/zubalenok" style="left:2.4rem;top:12.4rem;width:9.63rem;height:9.63rem"><p class="t p16 tcx" style="left:0;width:9.53rem;top:5.96rem">Zubalenok</p></a>
+<a class="hit" href="mailto:SUPPORT_ZUBALENOK@ZBL.AGENCY" style="left:16.58rem;top:12.4rem;width:9.63rem;height:9.63rem"><p class="t p16 tcx" style="left:0;width:9.62rem;top:5.76rem">Email</p></a>
+<a class="hit" href="https://www.instagram.com/zubalenok.team" style="left:30.77rem;top:12.4rem;width:9.63rem;height:9.63rem"><p class="t p16 tcx" style="left:0;width:9.59rem;top:5.76rem">Support</p></a>
+<a class="t p14 o50" style="left:2.4rem;top:24.36rem" href="/policy">PRIVACY POLICY AND USER AGREEMENT</a>
+<p class="t p14 o50" style="left:2.4rem;top:27.46rem">© 2026 ,  ZBL COMPANY BV, ROESELARE, BE 1022336448</p>
+</section>
+
+</div>
+
+<div class="footer-bg" id="footer-bg">
+  <footer class="footer">
+    <div class="footer__timer-row">
+      <p class="footer__title">offer ends in:</p>
+      <div class="timer-display">
+        <div class="timer-box">00</div>
+        <span class="timer-separator"></span>
+        <div class="timer-box">59</div>
+        <span class="timer-separator"></span>
+        <div class="timer-box">45</div>
+      </div>
+    </div>
+    <div class="footer__cta">
+      <p class="footer__note">Join Today, Get a Free Bonus Pack</p>
+      <a class="footer__btn check-click" href="https://zubalenok.online/shop/item/13510" data-pay="v1">START MY MEMBERSHIP</a>
+    </div>
+  </footer>
+</div>
+
+<!-- Попап зі всіма програмами (відкривається кліком по картці програми) -->
+<div class="modal-overlay" id="programsModal">
+  <div class="modal-wrapper">
+    <div class="modal-inner">
+      <div class="modal-top">
+        <div class="modal-title-group">
+          <div class="modal-title-red">ALL INCLUDED</div>
+          <div class="modal-title-black">EXPLORE ALL 16 PROGRAMS</div>
+        </div>
+        <div class="s2-marquee-container modal-marquee">
+          <div class="s2-marquee-track">
+            <div class="s2-marquee-group">
+              <div class="s2-marquee-item"><img src="./img/modal/star.webp" class="s2-star" alt=""><span>ALL INCLUDED</span></div>
+              <div class="s2-marquee-item"><img src="./img/modal/star.webp" class="s2-star" alt=""><span>ALL INCLUDED</span></div>
+              <div class="s2-marquee-item"><img src="./img/modal/star.webp" class="s2-star" alt=""><span>ALL INCLUDED</span></div>
+              <div class="s2-marquee-item"><img src="./img/modal/star.webp" class="s2-star" alt=""><span>ALL INCLUDED</span></div>
+            </div>
+            <div class="s2-marquee-group" aria-hidden="true">
+              <div class="s2-marquee-item"><img src="./img/modal/star.webp" class="s2-star" alt=""><span>ALL INCLUDED</span></div>
+              <div class="s2-marquee-item"><img src="./img/modal/star.webp" class="s2-star" alt=""><span>ALL INCLUDED</span></div>
+              <div class="s2-marquee-item"><img src="./img/modal/star.webp" class="s2-star" alt=""><span>ALL INCLUDED</span></div>
+              <div class="s2-marquee-item"><img src="./img/modal/star.webp" class="s2-star" alt=""><span>ALL INCLUDED</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper modal-swiper">
+        <div class="swiper-wrapper" id="modalSwiperWrapper">
+          <!-- Слайди генерує js/modal.js -->
+        </div>
+      </div>
+
+      <div class="modal-nav">
+        <div class="modal-btn-prev"><img src="./img/modal/left.png" alt="Left"></div>
+        <div class="modal-btn-next"><img src="./img/modal/right.png" alt="Right"></div>
+      </div>
+    </div>
+
+    <div class="modal-close" id="closeModalBtn">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 1L13 13M1 13L13 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<script defer>
+  document.addEventListener('DOMContentLoaded', () => {
+    const footer = document.getElementById('footer-bg');
+    if (!footer) return;
+    window.addEventListener('scroll', () => {
+      if (window.scrollY >= 700) {
+        footer.classList.add('active');
+      } else {
+        footer.classList.remove('active');
+      }
+    });
+  });
+</script>
+<script src="./js/data.js?v=2"></script>
+<script src="./js/timer.js?v=3"></script>
+<script src="./js/modal.js?v=2"></script>
+<script src="./js/faq.js?v=4"></script>
+<script src="./js/video-optimize.js?v=2"></script>
+<script src="./js/video-slides.js?v=4"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./js/slider.js?v=25"></script>
+<!--th:pay=4--></body>
+</html>
